@@ -1,0 +1,167 @@
+.logo {
+
+    margin: auto;
+
+    p {
+        font-family: 'Century Gothic';
+        font-weight: bold;
+        font-style: italic;
+        color: #29255A;
+    }
+
+    h5 {
+        font-family: 'Century Gothic';
+        font-weight: bold;
+        font-style: italic;
+        color: #29255A;
+    }
+}
+
+.left-panel {
+    display: flex;
+    width: 30px;
+    height: 280px;
+    background-color: #29255A;
+    z-index: 9999;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    button {
+        margin: auto;
+        font-size: 12px;
+        border: none;
+        background: none;
+        color: white;
+    }
+}
+
+.right-panel {
+    display: flex;
+    width: 30px;
+    height: 280px;
+    background-color: #29255A;
+    z-index: 9999;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    button {
+        margin: auto;
+        font-size: 12px;
+        border: none;
+        background: none;
+        color: white;
+    }
+}
+
+.slide-item {
+    text-align: center;
+    width: 280px;
+    height: 280px;
+    margin-left: 0px;
+    margin-right: 20px;
+    transition: 0.5s ease;
+    border: 1px solid grey;
+    z-index: 1;
+
+    img {
+        z-index: 1;
+        width: 279px;
+        height: 250px;
+    }
+
+    p {
+        color: #29255A;
+    }
+}
+
+
+@media(max-width: 767px) {
+
+    .mobile-wrapper {
+        padding-left: 30px !important;
+        padding-right: 0px !important;
+        position: relative;
+    }
+
+    .left-panel {
+        top: 0px;
+        height: 100%;
+        left: 0px;
+    }
+
+    .left-mobile-panel {
+        display: flex;
+        width: 30px;
+        height: 280px;
+        background-color: transparent;
+        z-index: 9999;
+        position: absolute;
+        top: 0px;
+        left: 40px;
+
+        button {
+            margin: auto;
+            background: white;
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            display: flex;
+
+            i {
+                margin: auto;
+            }
+        }
+    }
+
+    .right-mobile-panel {
+        display: flex;
+        width: 30px;
+        height: 280px;
+        background-color: transparent;
+        z-index: 9999;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+        button {
+            margin: auto;
+            background: white !important;
+            border: none;
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            display: flex;
+
+            i {
+                margin: auto;
+            }
+        }
+    }
+
+    .quote {
+        margin: auto;
+        background-color: #29255A;
+        color: white;
+        text-transform: uppercase;
+        font-size: 24px;
+        padding: 5px 10px;
+    }
+
+    .mobile-logo {
+        width: 100%;
+        display: flex !important;
+        position: relative;
+        margin-left: 30px;
+
+        .logo {
+            p {
+                font-size: 20px;
+            }
+            h5 {
+                font-size: 30px;
+            }
+        }
+    }
+}
